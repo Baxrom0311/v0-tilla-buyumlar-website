@@ -11,19 +11,17 @@ const iconMap = {
 
 export function Categories() {
   return (
-    <section id="categories" className="py-14 sm:py-20 lg:py-24 bg-secondary/40">
+    <section id="categories" className="py-20 sm:py-24 bg-secondary/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8 sm:mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
-            <div className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-gold-deep mb-2 sm:mb-3">
-              Kolleksiyalar
-            </div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground text-balance">
+            <div className="text-xs uppercase tracking-[0.25em] text-gold-deep mb-3">Kolleksiyalar</div>
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-foreground text-balance">
               Mukammal toifalar
             </h2>
           </div>
           <p className="text-sm text-muted-foreground max-w-md">
-            Har bir lahzaga mos buyum — kundalik nafislikdan tortib, bayramona dabdabaligacha.
+            Har bir lahzaga mos buyum — kundalik nafislikdan tortib, bayramona dabdabaligacha. Toifalardan tanlang.
           </p>
         </div>
 
@@ -35,25 +33,23 @@ export function Categories() {
               <a
                 key={cat.slug}
                 href="#products"
-                className={`group relative overflow-hidden rounded-2xl border border-border bg-card p-4 sm:p-6 transition-all hover:border-gold/40 hover:shadow-xl hover:shadow-gold/5 hover:-translate-y-1 ${
+                className={`group relative overflow-hidden rounded-2xl border border-border bg-card p-5 sm:p-6 transition-all hover:border-gold/40 hover:shadow-xl hover:shadow-gold/5 hover:-translate-y-1 ${
                   isFeatured ? "lg:col-span-2 lg:row-span-1" : ""
                 }`}
               >
                 <div className="flex items-start justify-between">
-                  <div className="size-10 sm:size-11 rounded-xl bg-gold/10 text-gold-deep flex items-center justify-center group-hover:bg-gold group-hover:text-ink transition-colors">
-                    <Icon className="size-4 sm:size-5" strokeWidth={1.5} />
+                  <div className="size-11 rounded-xl bg-gold/10 text-gold-deep flex items-center justify-center group-hover:bg-gold group-hover:text-ink transition-colors">
+                    <Icon className="size-5" strokeWidth={1.5} />
                   </div>
                   <ArrowUpRight className="size-4 text-muted-foreground group-hover:text-gold transition-colors" />
                 </div>
 
-                <div className="mt-6 sm:mt-10">
-                  <h3 className="font-serif text-lg sm:text-2xl font-semibold text-foreground leading-tight">
-                    {cat.name}
-                  </h3>
+                <div className="mt-8 sm:mt-10">
+                  <h3 className="font-serif text-xl sm:text-2xl font-semibold text-foreground">{cat.name}</h3>
                   <p className="text-xs sm:text-sm text-muted-foreground mt-1.5 leading-relaxed line-clamp-2">
                     {cat.description}
                   </p>
-                  <div className="mt-3 sm:mt-4 inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] uppercase tracking-widest text-gold-deep font-medium">
+                  <div className="mt-4 inline-flex items-center gap-1.5 text-[11px] uppercase tracking-widest text-gold-deep font-medium">
                     <span className="size-1 rounded-full bg-gold" />
                     {cat.count} ta buyum
                   </div>
