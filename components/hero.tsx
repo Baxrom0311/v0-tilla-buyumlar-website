@@ -21,59 +21,60 @@ export function Hero() {
       {/* Decorative grain */}
       <div className="absolute inset-0 opacity-[0.06] mix-blend-overlay pointer-events-none [background-image:radial-gradient(circle,white_1px,transparent_1px)] [background-size:3px_3px]" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-36">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/30 bg-gold/10 backdrop-blur text-xs font-medium tracking-widest uppercase text-gold animate-shimmer">
-              <Sparkles className="size-3.5" />
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full border border-gold/30 bg-gold/10 backdrop-blur text-[10px] sm:text-xs font-medium tracking-widest uppercase text-gold animate-shimmer">
+              <Sparkles className="size-3 sm:size-3.5" />
               <span>Yangi 2026 kolleksiyasi</span>
             </div>
 
-            <h1 className="mt-6 font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-balance">
+            <h1 className="mt-5 sm:mt-6 font-serif text-[2.25rem] leading-[1.1] sm:text-5xl lg:text-7xl font-bold sm:leading-[1.05] tracking-tight text-balance">
               Har bir <em className="text-gold not-italic">tilla buyum</em>
-              <br />
-              o'zining hikoyasi bilan.
+              <br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>
+              o&apos;zining hikoyasi bilan.
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-cream/70 leading-relaxed max-w-xl text-pretty">
-              585 va 750 probali asl tilla buyumlar, brilliantli uzuklar, zarif zanjirlar va to'plamlar — eng yaxshi
-              ustalardan, eng qulay narxlarda.
+            <p className="mt-4 sm:mt-6 text-sm sm:text-lg text-cream/70 leading-relaxed max-w-xl text-pretty">
+              585 va 750 probali asl tilla buyumlar, brilliantli uzuklar, zarif zanjirlar va to&apos;plamlar — eng
+              yaxshi ustalardan, eng qulay narxlarda.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3">
               <Button
                 size="lg"
-                className="rounded-full bg-gold text-ink hover:bg-gold-deep h-12 px-7 font-semibold text-sm tracking-wide shadow-lg shadow-gold/20"
+                className="rounded-full bg-gold text-ink hover:bg-gold-deep h-12 px-6 sm:px-7 font-semibold text-sm tracking-wide shadow-lg shadow-gold/20 w-full sm:w-auto"
                 asChild
               >
                 <a href="#products">
-                  Katalogni ko'rish
+                  Katalogni ko&apos;rish
                   <ArrowRight className="size-4 ml-1" />
                 </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-full bg-transparent border-cream/30 text-cream hover:bg-cream hover:text-ink h-12 px-7 font-medium text-sm tracking-wide"
+                className="rounded-full bg-transparent border-cream/30 text-cream hover:bg-cream hover:text-ink h-12 px-6 sm:px-7 font-medium text-sm tracking-wide w-full sm:w-auto"
                 asChild
               >
-                <a href="#flash-sale">Aksiyalar — 30% gacha</a>
+                <a href="#flash-sale">Aksiyalar — 30%</a>
               </Button>
             </div>
 
             {/* Stats */}
-            <div className="mt-12 grid grid-cols-3 gap-6 max-w-lg">
+            <div className="mt-10 sm:mt-12 grid grid-cols-3 gap-3 sm:gap-6 max-w-lg">
               <div>
-                <div className="font-serif text-3xl font-bold text-cream">12+</div>
-                <div className="text-xs text-cream/60 mt-1">Yillik tajriba</div>
+                <div className="font-serif text-2xl sm:text-3xl font-bold text-cream">12+</div>
+                <div className="text-[10px] sm:text-xs text-cream/60 mt-1 leading-tight">Yillik tajriba</div>
               </div>
               <div>
-                <div className="font-serif text-3xl font-bold text-cream">25k+</div>
-                <div className="text-xs text-cream/60 mt-1">Mamnun mijoz</div>
+                <div className="font-serif text-2xl sm:text-3xl font-bold text-cream">25k+</div>
+                <div className="text-[10px] sm:text-xs text-cream/60 mt-1 leading-tight">Mamnun mijoz</div>
               </div>
               <div>
-                <div className="font-serif text-3xl font-bold text-cream">150+</div>
-                <div className="text-xs text-cream/60 mt-1">Buyumlar turi</div>
+                <div className="font-serif text-2xl sm:text-3xl font-bold text-cream">150+</div>
+                <div className="text-[10px] sm:text-xs text-cream/60 mt-1 leading-tight">Buyumlar turi</div>
               </div>
             </div>
           </div>
